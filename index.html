@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert.ly</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'> 
+    <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="./assets/logo1.png" alt="logo" class="brand__logo"/>
+            </div>
+            <div class="anchor">
+                <a href="#offers">Offers</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+            </div>
+            <div>
+                <button id="login" class="button__primary">Log in</button>
+            </div>
+            <div class="nav__items">
+                <button id="cart" class="button__primary">
+                    <i class="gg-shopping-cart"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button id="me" class="button__primary">
+                    <i class="gg-menu"></i>
+                </button>
+                <div class="dropdown__items">
+                    <a href="#offers">Offers</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero__container">
+            <div class="hero_image_container">
+                <img src="./assets/hero2.png" alt="heroimage" class="hero__image"/>
+                <img src="./assets/heroShape.png" alt="heroimageshape/" class="hero__image__shape" />
+            </div>
+            <div class="hero__description">
+                <h1 class="hero__text">Delightful desserts just a few clicks away! </h1>
+                <button id="order__button" class="button__primary">Order Now</button>
+            </div>
+        </section>
+    <div class="form__input">
+        <form>
+            <input type="number" placeholder="    Enter pincode "/>
+            <input type="submit" value="ok"/>
+            <br>
+            <input type="search" placeholder=" Search restaurants/desserts "/>
+            <button class="search__icon">
+                <i class="gg-search"></i>
+            </button>
+        </form>
+    </div>
+        <section id="offers" class="discount__coupon__container">
+            <h1 class="text-x2">Best offers ever!!!</h1>
+        <div class="discount__coupon__container__list">
+            <div class="discount__coupon">
+                <img src="./assets/discount1.JPG" alt="discount coupon 1" class="dc"/>
+            </div>
+            <div class="discount__coupon">
+                <img src="./assets/discount2.JPG" alt="discount coupon 2" class="dc"/>
+            </div>
+            <div class="discount__coupon">
+                <img src="./assets/discount3.JPG" alt="discount coupon 3" class="dc"/>
+            </div>
+            <div class="discount__coupon">
+                <img src="./assets/discount4.JPG" alt="discount coupon 4" class="dc"/>
+            </div>
+        </div>
+        </section>
+        <div class="discount__coupon__text">
+            <strong>100% Safe & 100% Delicious</strong>
+        </div>
+        <section id="menu" class="food__list__container">
+            <h1 class="text-x1">Explore our menu</h1>
+            <div class="food__list__container__diagonal"></div>
+            <div class="food__menu__card__list">
+                <div style= "margin-bottom: 1rem;" class="food__menu__card">
+                    <img src="./assets/cake.jpg" alt="cake" class="food__menu__card__image"/>
+                    <div class="food__menu__card__details">
+                        <h4 class="food__menu__card__title"><strong>Cake</strong></h4>
+                        <p>
+                            Theobroma, Nik Baker's, Sugarama Patisserie..
+                            <span style="color: brown;">+100</span>
+                        </p>
+                    </div>
+                </div>        
+                <div style= "margin-bottom: 1rem" class="food__menu__card">
+                    <img src="./assets/waffle.jpg" alt="Waffle" class="food__menu__card__image"/>
+                    <div class="food__menu__card__details">
+                        <h4 class="food__menu__card__title"><strong>Waffle</strong></h4>
+                        <p>
+                            Wafflesome, The Belgian Waffle Co., Wengers..
+                            <span style="color: brown;">+100</span>
+                        </p>
+                    </div>
+                </div>        
+                <div style= "margin-bottom: 1rem;" class="food__menu__card">
+                    <img src="./assets/icecream1.jpg" alt="Ice cream" class="food__menu__card__image"/>
+                    <div class="food__menu__card__details">
+                        <h4 class="food__menu__card__title"><strong>Ice cream</strong></h4>
+                        <p>
+                            Naturals, Giani's, Nirula's, Baskin Robbins..
+                            <span style="color: brown;">+100</span>
+                        </p>
+                    </div>
+                </div> 
+                <button class="view__more">View More</button>       
+            </div>
+        </section>
+        <section class="restaurant__list__container">
+            <div class="restaurant__list__text">
+                <h4 class="text-x3">Over 100 restaurants to serve you</h4>
+            </div>
+            <div class="restaurant__list__images__container">
+                <div class="restaurant__list__row1">
+                    <img src="./assets/restaurant1.jpg" alt="r1" class="restaurant1"/>
+                    <img src="./assets/restaurant2.jpg" alt="r2" class="restaurant2"/>
+                </div>
+                <div class="restaurant__list__row2">
+                    <img src="./assets/restaurant4.jpg" alt="r4" class="restaurant4"/>
+                    <img src="./assets/restaurant3.jpg" alt="r3" class="restaurant3"/>
+                </div>
+            </div>
+            <div class="email__input">
+            <form>
+                <label for="email">Stay Updated</label> 
+                <input type="email" placeholder=" Enter your email " id="email"/>
+                <input type="submit" value="ok"/>
+            </form>
+            </div>
+        </section>
+        <div id="about" class="bottom__container">
+            <div class="bottom__list">
+                <h2>Company</h2>
+                <p>
+                    About Us
+                    <br>
+                    Team 
+                    <br>
+                    Careers
+                </p>
+            </div>
+            <div class="bottom__list">
+                <h2>Contact and Legal</h2>
+                <p>
+                    Help and Support
+                    <br>
+                    Privacy
+                    <br>
+                    Terms and Conditions
+                </p>
+            </div>
+            <div class="bottom__list">
+                <h2>Social links</h2>
+                <img src="./assets/social.png" alt="social links" class="social"/>
+            </div>
+            <hr style="width:100%">
+            <div class="last__line">
+                <img src="./assets/logo.png" alt="logo" class="brand__logo__bottom"/>
+                <img src="./assets/social__media__icons1.png" alt="social media" class="social__media"/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
