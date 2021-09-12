@@ -7,6 +7,8 @@
 body {
     font-family: 'Kaisei Decol', serif;
     background-color:#ebf2ff;
+    background-image: url(./assets/mainbg.jpeg);
+    background-size: 100%;
 }
 
 .navbar {
@@ -15,6 +17,7 @@ body {
     top: 0;
     display: flex;
     align-items: center;
+    justify-content: space-evenly; /*changed this*/
     background-color: rgb(41, 8, 8);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
     z-index: 9999;
@@ -35,10 +38,15 @@ body {
 }
 
 #login{
-    margin-left: 55px;
     font-size: 17px;
 }
 
+.logbutton a{
+    text-decoration: none;
+}
+.all{
+    display: flex;
+}
 #me{
     height: 9px;
     padding: 15px 0px;
@@ -47,7 +55,6 @@ body {
 #cart{
     font-size: 10px;
     height:34px;
-    margin-right: 20px;
 }
 
 .dropdown__items a{
@@ -76,7 +83,6 @@ body {
 
 .dropdown #me{
     font-family: inherit;
-    margin: 0;
 }
 
 .dropdown:hover .dropdown__items{
@@ -102,7 +108,7 @@ body {
 
 .hero__image {
     position: absolute;
-    right: 20px;
+    right: 5%;
     margin-top: 1rem;
     width: 65%;
     margin-right: 10%; 
@@ -119,8 +125,8 @@ body {
 .hero__description {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 3rem;
+    align-items: center;
+    margin-top: 20%;
     margin-bottom: 2rem;
 }
 
@@ -240,7 +246,7 @@ body {
 .text-x3{
     text-align: center;
     font-size: 1.7rem;
-    margin-top: 1rem;
+    /* margin-top: 0.3rem; */
     color: black;
 }
 
@@ -339,7 +345,6 @@ label{
     );
     font-size: 17px;
     margin: 5px;
-    padding: 5px 10px;
     align-self: center;
     text-align: center;
     transition: 0.5s;
@@ -348,10 +353,9 @@ label{
 }
 
 .bottom__container{
-    margin-top: 100px;
+    margin-top: 3rem;
     padding: 20px 20px 0px 20px;
     background-color: rgb(193, 150, 236);
-    width: 100%;
 }
 
 .bottom__list{
@@ -359,7 +363,7 @@ label{
 }
 
 .social{
-    width: 60%;
+    width: 12rem;
 }
 
 hr { 
@@ -385,9 +389,36 @@ h2{
     margin: 10px 0px;
 }
 
+.tt{
+    opacity: 0.6;
+    margin-top: 3rem;
+}
+
+.centered{
+    position: absolute;
+    top: 35%;
+    font-size: 1.5rem;
+}
+
+.cont{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#author{
+    font-size: 20px;
+}
+
+.gg-search{
+    left: 0.8rem;
+}
+
 @media (min-width: 1200px) {
     .navbar {
         padding: 0 3rem;
+        justify-content: unset;
     }
     .button__primary {
         margin: 1rem;
@@ -405,12 +436,17 @@ h2{
     .hero__image {
         padding-right: 100px;
         margin-top: 40px;
-        right: -10rem;
+        right: -18%;
         width: 45%;
     }
     .hero__image__shape{
         margin-top: 110px;
-        width: 600px;
+        width: 110%;
+    }
+    .hero__description{
+        align-items: flex-start;
+        margin-top: 3rem;
+        width: 90%;
     }
     .hero__text {
         margin-top: 6rem;
@@ -465,7 +501,7 @@ h2{
         background-color: white;
         border-radius: 6px;
     }
-    .food__list__container__diagonal{
+    .food__list__container__straight{
         background-image: linear-gradient(
             to right,
             rgb(84, 28, 116) 0%,
@@ -477,7 +513,7 @@ h2{
         top: 0px;
         width: 100%;
         height: 110%;
-        transform: skewY(-3deg);
+        /* transform: skewY(-3deg); */
         z-index: -3;
     }
     .view__more{
@@ -517,13 +553,19 @@ h2{
         font-size: 20px;
         width: 50%;
     }
+    input[type=submit]{
+        padding: 0;
+        font-size: 1rem;
+    }
     .bottom__container{
+        margin-top: 6rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
     .bottom__list{
-        flex-basis: 30%;
+        flex-basis: 25%;
+        text-align: center;
     }
     .brand__logo__bottom,.social__media{
         width:20%;
@@ -541,9 +583,46 @@ h2{
         align-items: left;
     }
     #login{
-        margin-left: 600px; font-size: 20px;
+        margin-right: auto;
+        font-size: 20px; 
     }
     .dropdown{
         display: none;
     }
+    .all{
+        display: flex;
+        margin-left: auto;
+    }
+    .tt{
+        margin-top: 4rem;
+        width: 80%;
+    }
+    .centered {
+        width: 80%;
+        top: 40%;
+        left: 10%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .cont{
+        width: 100%;
+        position: relative;
+        color: rgb(0, 0, 0);
+    }
+    #author{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    #cart{
+        height:36px;
+    }
+    /* .ft{
+        width: 60%;
+        height: 18rem;
+    }
+    .its__a__form{
+        top: 30%;
+    } */
 }
